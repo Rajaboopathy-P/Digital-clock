@@ -67,23 +67,7 @@
     @media (prefers-reduced-motion: reduce){ .blink-on .sep{ animation: none } }
 
     /* Background animated glow */
-    body::before{
-        content: "";
-        position: absolute;
-        inset: 0;
-        z-index: -1;
-        pointer-events: none;
-        background-color: #010111;
-        background-image:
-            radial-gradient(circle at 10% 20%, rgba(70,54,214,0.18) 0%, rgba(70,54,214,0.06) 8%, transparent 25%),
-            radial-gradient(circle at 85% 80%, rgba(60,180,255,0.10) 0%, rgba(60,180,255,0.04) 12%, transparent 30%);
-        background-repeat: no-repeat;
-        transform-origin: center;
-        will-change: transform, opacity;
-        animation: bgShift 14s linear infinite alternate;
-        filter: blur(24px) saturate(120%);
-        mix-blend-mode: screen;
-    }
+  
 
     body::after{
         content: "";
