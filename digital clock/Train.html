@@ -29,8 +29,7 @@
     :root[data-theme="accent"] .time span:last-child{ background: rgba(68,215,255,0.16); color: #ebf7ff; border-color: rgba(68,215,255,0.45); }
     .time{ font-size: clamp(2rem, 8vw, 3.6rem); display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 6px; }
     .time span:not(:last-child){ display: inline-block; margin: 0 6px; font-weight: 700; text-align: center; letter-spacing: 1.8px; }
-    .time span:last-child{ background: rgba(255,255,255,0.06); color: #eef0ff; font-size: clamp(0.75rem, 2.6vw, 1rem); font-weight: 700; text-transform: uppercase; margin-top: 6px; padding: 6px 8px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.04); }
-
+    .time span:last-child{ background: rgba(255,255,255,0.06); color: #eef0ff; font-size: clamp(0.75rem, 2.6vw, 1rem); font-weight: 700; text-transform: uppercase; margin-top: 6px; padding: 6px 8px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.04); 
     
     /* Tablet */
     @media (max-width: 900px){
@@ -39,7 +38,6 @@
         .date{ letter-spacing: 2px }
     }
 
-    
     /* Mobile */
     @media (max-width: 520px){
         h1{ margin: 14px 0 6px }
@@ -197,8 +195,6 @@
         document.documentElement.setAttribute('data-theme', s.theme);
         if(s.blink) document.body.classList.add('blink-on'); else document.body.classList.remove('blink-on');
     }
-
-    
     // updateclock should respect 24-hour setting
     const origUpdate = updateclock;
     function updateclock(){
