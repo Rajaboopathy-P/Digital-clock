@@ -230,6 +230,7 @@
         document.getElementById('theme-select').addEventListener('change', e=>{ const s=loadSettings(); s.theme = e.target.value; saveSettings(s); applySettings(); });
         document.getElementById('blink-toggle').addEventListener('change', e=>{ const s=loadSettings(); s.blink = e.target.checked; saveSettings(s); applySettings(); });
 
+        
         // keyboard shortcuts
         window.addEventListener('keydown', (ev)=>{
             if(ev.key === 't'){ // toggle theme
